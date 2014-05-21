@@ -33,6 +33,11 @@
 
 - (NSRange)firstParagraphRangeFromTextRange:(NSRange)range
 {
+    
+    if (self == nil){
+        return NSMakeRange(0, 0);
+    }
+    
 	NSInteger start = -1;
 	NSInteger end = -1;
 	NSInteger length = 0;
